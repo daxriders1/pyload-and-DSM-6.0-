@@ -1,0 +1,46 @@
+Hello everyone!
+
+Since I bought an Account from DDL.to, I wanted to use it on my NAS. I am using a Synology DS216J, DSM 6.0.2 and Pyload v0.4.9 along with Python 2.7. I noticed that pyload didnt update itself so I tried to exchange the UpdateManager.py with a newer one, according to many topics Ive found regarding this. It never worked tho so I decided to install IPKG (didnt have this before, but its running as expected) which killed my wget. Wget-ssl gives me an error when trying to write
+
+wget https://github.com/pyload/pyload/archive/stable.zip
+
+Error is: Couldnt establish SSL-Connection. I uninstalled wget and installed wget-ssl cause I read in other reps that works with https and that wget doesnt work after installing ipkg.
+However, I downloaded the stable.zip using the browser and manually installed it over the pyload home directory, the Updater is still not working. What am I doing wrong? I even tried to manually add the ddl.to class manually but its not working either as you can see!
+
+Thanks for help!
+
+Log: 
+34	18.12.2019 20:38:57	INFO	shutting down...
+35	18.12.2019 20:38:57	INFO	Starting pyLoad 0.4.9
+36	18.12.2019 20:38:57	INFO	Using home directory: /volume2/@appstore/pyload/etc
+37	18.12.2019 20:38:58	INFO	Checksum: Checksum validation is disabled in general configuration
+38	18.12.2019 20:38:58	INFO	ExtractArchive: Activated UnRar UnZip
+39	18.12.2019 20:38:58	INFO	Activated plugins: BypassCaptcha, CaptchaTrader, Checksum, ClickAndLoad, ExternalScripts, ExtractArchive, ImageTyperz, LinkdecrypterCom, UnSkipOnFail, UpdateManager, XFileSharingPro
+40	18.12.2019 20:38:58	INFO	Deactivate plugins: AlldebridCom, Captcha9kw, CaptchaBrotherhood, DeathByCaptcha, DownloadScheduler, EasybytezCom, Ev0InFetcher, ExpertDecoders, HotFolder, IRCInterface, MergeFiles, MultiHome, MultishareCz, Premium4Me, PremiumizeMe, RealdebridCom, RehostTo, XMPPInterface, ZeveraCom
+41	18.12.2019 20:38:58	INFO	Downloadtime: True
+42	18.12.2019 20:38:59	INFO	Starting threaded webserver: :::XXXX
+43	18.12.2019 20:38:59	INFO	Free space: xxxx GiB
+44	18.12.2019 20:38:59	INFO	Activating Accounts...
+45	18.12.2019 20:38:59	INFO	Activating Plugins...
+46	18.12.2019 20:39:00	ERROR	LinkdecrypterCom: Crypter list not found
+47	18.12.2019 20:39:00	INFO	pyLoad is up and running
+48	18.12.2019 20:39:02	WARNING	UpdateManager: Not able to connect server for updates
+49	18.12.2019 20:39:02	INFO	UpdateManager: No plugin updates available
+50	18.12.2019 20:40:02	ERROR	Error importing DdlTo: No module named XFSAccount
+51	18.12.2019 20:53:35	INFO	shutting down...
+52	18.12.2019 20:53:35	INFO	Received Quit signal
+53	18.12.2019 21:20:01	INFO	Starting pyLoad 0.4.9
+54	18.12.2019 21:20:01	INFO	Using home directory: /volume2/@appstore/pyload/etc
+55	18.12.2019 21:20:01	INFO	Checksum: Checksum validation is disabled in general configuration
+56	18.12.2019 21:20:01	INFO	ExtractArchive: Activated UnRar UnZip
+57	18.12.2019 21:20:01	INFO	Activated plugins: BypassCaptcha, CaptchaTrader, Checksum, ClickAndLoad, ExternalScripts, ExtractArchive, ImageTyperz, LinkdecrypterCom, UnSkipOnFail, UpdateManager, XFileSharingPro
+58	18.12.2019 21:20:01	INFO	Deactivate plugins: AlldebridCom, Captcha9kw, CaptchaBrotherhood, DeathByCaptcha, DownloadScheduler, EasybytezCom, Ev0InFetcher, ExpertDecoders, HotFolder, IRCInterface, MergeFiles, MultiHome, MultishareCz, Premium4Me, PremiumizeMe, RealdebridCom, RehostTo, XMPPInterface, ZeveraCom
+59	18.12.2019 21:20:01	INFO	Downloadtime: True
+60	18.12.2019 21:20:02	INFO	Starting threaded webserver: :::xxxx
+61	18.12.2019 21:20:02	INFO	Free space: xxxx GiB
+62	18.12.2019 21:20:03	INFO	Activating Accounts...
+63	18.12.2019 21:20:03	INFO	Activating Plugins...
+64	18.12.2019 21:20:03	ERROR	LinkdecrypterCom: Crypter list not found
+65	18.12.2019 21:20:03	INFO	pyLoad is up and running
+66	18.12.2019 21:20:06	WARNING	UpdateManager: Not able to connect server for updates
+67	18.12.2019 21:20:06	INFO	UpdateManager: No plugin updates available 
